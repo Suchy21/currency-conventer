@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <link href="currencyCss\cc.css" rel="stylesheet">
+    <link href="currencyCss\formItems.css" rel="stylesheet">
+    <link href="currencyCss\resultButton.css" rel="stylesheet">
+    <script defer src="C:\dev\currency-conventer\cc.js"></script>
+</head>
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator walutowy</legend>
+            <p>
+                <label class="form__label">
+                    Kwota w PLN: <input class="js-pln form__plnAmount" type="number" min="0" step="0.01" required>
+                </label>
+            </P>
+            <p>
+                <label class="form__label">
+                    Wybierz walutę: <select class="js-select form__currencySelect" name="Waluta" required>
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>GBP</option>
+                    </select>
+                </label>
+            <p>
+                <button class="js-submit resultButton">Oblicz</button>
+            </P>
+            <p>Wynik: <strong class="js-result"></strong> </p>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
